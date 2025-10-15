@@ -5,25 +5,30 @@ See what ChatGPT does in the background.
 
 ## Setup Instructions
 
-1. **Create the Conda Environment**
+1. **Create an OpenAI API Key**  
+    Sign up at [OpenAI](https://platform.openai.com/account/api-keys) and generate an API key.
 
+2. **Save the API Key in `.env`**  
+    Create a `.env` file in the project root and add your API key. You can also use the `.env` template:
+    ```
+    OPENAI_API_KEY=your_api_key_here
+    ```
+
+3. **Create the Conda Environment**
     ```bash
     conda env create -f environment.yml
     ```
 
-2. **Activate the Environment**
-
+4. **Activate the Environment**
     ```bash
     conda activate llm_playground
     ```
 
-3. **Launch Jupyter Notebook**
-
+5. **Launch Jupyter Notebook**
     ```bash
     jupyter notebook
     ```
-
-    Explore and test the playground in your browser.
+    Open the notebook in your browser to explore and test the playground.
 
 ## Additional Resources
 
